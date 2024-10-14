@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oro Andino Hotel & Spa</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Enlaces a fuentes y Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Oro Andino Hotel & Spa</a>
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#servicios"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
+                <li><a href="#habitaciones"><i class="fas fa-bed"></i> Habitaciones</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Oro Andino Hotel & Spa</h1>
+            <h2>Un Oasis de Lujo en el Corazón de Cusco</h2>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-background" style="background-image: url('img/paisaje.jpg');"></div>
+            <div class="container">
+                <h3>Bienvenido a Oro Andino Hotel & Spa</h3>
+                <p>Descubre un refugio de elegancia y confort en la histórica ciudad de Cusco. Ofrecemos una experiencia única de lujo y hospitalidad peruana.</p>
+                <a href="../reserva.html" class="cta-button">Reserva Ahora</a>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="container">
+                <h3>Nuestros Servicios</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-spa"></i>
+                        <h4>Spa y Bienestar</h4>
+                        <p>Relájate en nuestro exclusivo spa con tratamientos inspirados en tradiciones andinas.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Gastronomía Gourmet</h4>
+                        <p>Disfruta de una experiencia culinaria excepcional, fusionando sabores locales e internacionales.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h4>Piscina Panorámica</h4>
+                        <p>Relájate en nuestra piscina con vistas impresionantes de la ciudad.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h4>Servicio de Concierge</h4>
+                        <p>Nuestro equipo está disponible para hacer de tu estancia una experiencia inolvidable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habitaciones">
+            <div class="container">
+                <h3>Nuestras Habitaciones</h3>
+                <div class="room-showcase">
+                    <img src="img/cuarto1.jpg" alt="Suite Presidencial" class="room-image">
+                    <div class="room-info">
+                        <h4>Suite Presidencial</h4>
+                        <p>Disfruta del máximo lujo con vistas panorámicas y servicios exclusivos.</p>
+                        <a href="#" class="cta-button" onclick="mostrarDetalles('suite-presidencial', event)">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="room-showcase">
+                    <img src="img/cuarto2.jpg" alt="Habitación Deluxe" class="room-image">
+                    <div class="room-info">
+                        <h4>Habitación Deluxe</h4>
+                        <p>Comodidad y elegancia en un espacio diseñado para tu descanso.</p>
+                        <a href="#" class="cta-button" onclick="mostrarDetalles('habitacion-deluxe', event)">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="room-showcase">
+                    <img src="img/cuarto3.jpg" alt="Suite Familiar" class="room-image">
+                    <div class="room-info">
+                        <h4>Suite Familiar</h4>
+                        <p>El espacio ideal para disfrutar en familia con todas las comodidades.</p>
+                        <a href="#" class="cta-button" onclick="mostrarDetalles('suite-familiar', event)">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para detalles de las habitaciones -->
+        <div id="modal-detalles" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-button" onclick="cerrarDetalles()">&times;</span>
+                <h3 id="modal-titulo"></h3>
+                <p id="modal-descripcion"></p>
+            </div>
+        </div>
+
+        <section id="contacto">
+            <div class="container">
+                <h3>Contáctanos</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Avenida El Sol 123, Cusco, Perú</p>
+                    <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> +51 84 123456</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> reservas@oroandinohotel.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Oro Andino Hotel & Spa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
